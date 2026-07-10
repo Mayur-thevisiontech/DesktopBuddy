@@ -1,22 +1,38 @@
 function CharacterSVG() {
-  console.log("CharacterSVG Loaded");
-
   return (
-    <div
-      style={{
-        width: "180px",
-        height: "180px",
-        background: "red",
-        color: "white",
-        fontSize: "30px",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        borderRadius: "20px",
-      }}
+    <svg
+      width="180"
+      height="220"
+      viewBox="0 0 180 220"
     >
-      HELLO
-    </div>
+      <circle
+        cx="90"
+        cy="90"
+        r="60"
+        fill="deepskyblue"
+      />
+
+      <circle
+        cx="70"
+        cy="80"
+        r="7"
+        fill="black"
+      />
+
+      <circle
+        cx="110"
+        cy="80"
+        r="7"
+        fill="black"
+      />
+
+      <path
+        d="M70 110 Q90 130 110 110"
+        stroke="black"
+        strokeWidth="4"
+        fill="none"
+      />
+    </svg>
   );
 }
 
